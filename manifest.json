@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Jenkins Job Status",
+  "version": "1.0",
+  "description": "Display Jenkins Job Status",
+
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+	"https://*/*",
+	"http://*/*"
+      ]
+    }
+  ],
+  "action": {
+  	"default_popup": "popup.html"
+  }
+}
